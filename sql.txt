@@ -1,21 +1,36 @@
 Query con GROUP BY:
+
 1 - SELECT COUNT(*) AS `n_students`, `year`
     FROM db_university.courses
     GROUP BY `year`;
+
 2 - SELECT count(*), `office_address`
     FROM db_university.teachers
-    GROUP BY `office_address`
+    GROUP BY `office_address`;
+
 3 - SELECT avg(`vote`) AS `media`, `exam_id` 
     FROM db_university.exam_student
-    GROUP BY `exam_id`
-4 - 
+    GROUP BY `exam_id`;
+
+4 - SELECT count(`name`), `department_id`
+    FROM db_university.degrees
+    GROUP BY `department_id`;
+
 
 Query con SELECT:
+
 1 - 
+
 2 - 
+
 3 - 
+
 4 - 
+
 5 - 
+
 6 - 
+
 7 - 
+
 8 - 
