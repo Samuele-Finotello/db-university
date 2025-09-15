@@ -39,7 +39,9 @@ Query con SELECT:
     FROM db_university.exams
     WHERE `date` = "2020-06-20" AND `hour` > "14:00:00";
 
-6 - 
+6 - SELECT `name`
+    FROM db_university.degrees
+    WHERE `name` LIKE "%magistrale%";
 
 7 - 
 
