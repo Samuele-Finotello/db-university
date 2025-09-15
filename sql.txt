@@ -19,7 +19,9 @@ Query con GROUP BY:
 
 Query con SELECT:
 
-1 - 
+1 - SELECT `date_of_birth`
+    FROM db_university.students
+    WHERE `date_of_birth` LIKE "1990%"
 
 2 - 
 
