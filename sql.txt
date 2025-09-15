@@ -35,7 +35,9 @@ Query con SELECT:
     FROM db_university.courses
     WHERE `period` = "I semestre" AND `year` = 1;
 
-5 - 
+5 - SELECT `date`, `hour`
+    FROM db_university.exams
+    WHERE `date` = "2020-06-20" AND `hour` > "14:00:00";
 
 6 - 
 
