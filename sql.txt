@@ -46,4 +46,6 @@ Query con SELECT:
 7 - SELECT `name`
     FROM db_university.departments;
 
-8 - 
+8 - SELECT `phone`
+    FROM db_university.teachers
+    WHERE `phone` IS NULL;
