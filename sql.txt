@@ -2,7 +2,9 @@ Query con GROUP BY:
 1 - SELECT COUNT(*) AS `n_students`, `year`
     FROM db_university.courses
     GROUP BY `year`;
-2 - 
+2 - SELECT count(*), `office_address`
+    FROM db_university.teachers
+    GROUP BY `office_address`
 3 - 
 4 - 
 
