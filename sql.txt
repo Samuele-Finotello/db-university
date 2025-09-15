@@ -5,7 +5,9 @@ Query con GROUP BY:
 2 - SELECT count(*), `office_address`
     FROM db_university.teachers
     GROUP BY `office_address`
-3 - 
+3 - SELECT avg(`vote`) AS `media`, `exam_id` 
+    FROM db_university.exam_student
+    GROUP BY `exam_id`
 4 - 
 
 Query con SELECT:
