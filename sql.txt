@@ -21,9 +21,11 @@ Query con SELECT:
 
 1 - SELECT `date_of_birth`
     FROM db_university.students
-    WHERE `date_of_birth` LIKE "1990%"
+    WHERE `date_of_birth` LIKE "1990%";
 
-2 - 
+2 - SELECT `cfu`
+    FROM db_university.courses
+    WHERE `cfu` > 10;
 
 3 - 
 
