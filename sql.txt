@@ -31,7 +31,9 @@ Query con SELECT:
     FROM db_university.students
     WHERE `date_of_birth` < "1994-09-15";
 
-4 - 
+4 - SELECT `period`, `year`
+    FROM db_university.courses
+    WHERE `period` = "I semestre" AND `year` = 1;
 
 5 - 
 
