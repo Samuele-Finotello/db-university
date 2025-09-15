@@ -43,6 +43,7 @@ Query con SELECT:
     FROM db_university.degrees
     WHERE `name` LIKE "%magistrale%";
 
-7 - 
+7 - SELECT `name`
+    FROM db_university.departments;
 
 8 - 
