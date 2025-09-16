@@ -3,7 +3,7 @@ Query con JOIN:
 1 - SELECT students.`id`, students.`name` AS `name_students`, students.`surname` AS `surname_students`, 
     students.`registration_number`, students.`enrolment_date`, degrees.`name` AS `name_degrees`
     FROM db_university.students
-    INNER JOIN degrees ON students.`degree_id` = `degrees.id`
+    INNER JOIN degrees ON degrees.`id` = students.`degree_id`
     WHERE degrees.`name` = "Corso di Laurea in Economia";
 
 2 - SELECT departments.`name` AS `name_departments`, degrees.`name` AS `name_degrees`, degrees.`level`, departments.`address`,
@@ -13,7 +13,13 @@ Query con JOIN:
     WHERE departments.`name` = "Dipartimento di Neuroscienze"
     AND degrees.`level` = "magistrale";
 
-3 - 
+3 - SELECT teachers.`id` AS `teachers_id`, teachers.`name` AS `teachers_name`, teachers.`surname` AS `teachers_surname`, 
+    teachers.`email`, courses.`id` AS `courses_id`, courses.`name` AS `courses_name`, courses.`description`, courses.`year`
+    FROM db_university.teachers
+    JOIN course_teacher ON course_teacher.`teacher_id` = teachers.`id`
+    JOIN courses ON courses.`id` = course_teacher.`course_id`
+    WHERE teachers.`name` = "Fulvio"
+    AND teachers.`surname` = "Amato";
 
 4 - 
 
