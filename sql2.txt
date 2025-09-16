@@ -28,7 +28,12 @@ Query con JOIN:
     JOIN students ON students.`degree_id` = degrees.`id`
     ORDER BY students.`name`, students.`surname` ASC;
 
-5 - 
+5 - SELECT degrees.`id`, degrees.`name` AS `degrees_name`, degrees.`level`, degrees.`address`, courses.`name` AS `courses_name`,  
+    courses.`description`, courses.`year`, teachers.`name` AS `teachers_name`, teachers.`surname` AS `teachers_surname`
+    FROM db_university.teachers
+    JOIN course_teacher ON course_teacher.`teacher_id` = teachers.`id`
+    JOIN courses ON courses.`id` = course_teacher.`course_id`
+    JOIN degrees ON degrees.`id` = courses.`degree_id`;
 
 6 - 
 
