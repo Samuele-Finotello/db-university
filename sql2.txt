@@ -21,7 +21,12 @@ Query con JOIN:
     WHERE teachers.`name` = "Fulvio"
     AND teachers.`surname` = "Amato";
 
-4 - 
+4 - SELECT students.`id`, students.`name` AS `students_name`, students.`surname` AS `students_surname`, 
+    students.`registration_number`, degrees.`name` AS `degrees_name`, degrees.`level`, departments.`name` AS `departments_name`, departments.`address`
+    FROM db_university.departments
+    JOIN degrees ON degrees.`department_id` = departments.`id`
+    JOIN students ON students.`degree_id` = degrees.`id`
+    ORDER BY students.`name`, students.`surname` ASC;
 
 5 - 
 
