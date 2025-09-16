@@ -29,7 +29,7 @@ Query con SELECT:
 
 3 - SELECT `date_of_birth`
     FROM db_university.students
-    WHERE `date_of_birth` < "1994-09-15";
+    WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30
 
 4 - SELECT `period`, `year`
     FROM db_university.courses
